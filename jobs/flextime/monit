@@ -1,0 +1,5 @@
+check process flextime
+  with pidfile /var/vcap/sys/run/flextime/pid
+  start program "/var/vcap/jobs/flextime/bin/ctl start"
+  stop program "/var/vcap/jobs/flextime/bin/ctl stop"
+  group vcap

@@ -1,0 +1,10 @@
+---
+name: flextime
+
+templates:
+  ctl.erb: bin/ctl
+
+packages:
+  - flextime
+
+properties: {}

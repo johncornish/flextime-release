@@ -1,0 +1,8 @@
+---
+name: flextime
+
+dependencies:
+- golang1.11.1
+
+files:
+- github.com/johncornish/flextime-go/cmd/flextime/*.go # gosub

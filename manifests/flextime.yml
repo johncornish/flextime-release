@@ -1,0 +1,31 @@
+name: flextime
+
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: latest
+
+releases:
+- name: flextime
+  version: latest
+
+update:
+  canaries: 1
+  max_in_flight: 10
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+
+instance_groups:
+- name: flextime
+  azs:
+  - z1
+  instances: 1
+  jobs:
+  - name: flextime
+    release: flextime
+    properties: {}
+  vm_type: minimal
+  stemcell: default
+  persistent_disk_type: default
+  networks:
+  - name: default
