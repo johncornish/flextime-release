@@ -7,7 +7,7 @@ export GOROOT=$(readlink -nf /var/vcap/packages/golang1.11.1)
 export GOPATH=$BOSH_INSTALL_TARGET
 export PATH=$GOROOT/bin:$PATH
 
-go build -o ${BOSH_INSTALL_TARGET}/flextime code.cloudfoundry.org/flextime-go/cmd/agent
+go build -o ${BOSH_INSTALL_TARGET}/flextime github.com/johncornish/flextime-go/cmd/flextime
 
 # clean up source artifacts
 rm -rf ${BOSH_INSTALL_TARGET}/src ${BOSH_INSTALL_TARGET}/pkg

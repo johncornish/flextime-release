@@ -6,3 +6,5 @@ dependencies:
 
 files:
 - github.com/johncornish/flextime-go/cmd/flextime/*.go # gosub
+- github.com/johncornish/flextime-go/pkg/flextime/*.go # gosub
+- github.com/stretchr/stew/slice/*.go # gosub

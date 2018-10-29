@@ -1,0 +1,39 @@
+
+# golang
+pkg/
+bin/
+*.prof
+*.mprof
+*.coverprofile
+*.test
+
+# macOS
+.DS_Store
+
+# jetbrains
+.idea
+
+# bosh
+.blobs
+blobs
+.dev_builds
+dev_releases
+config/dev.yml
+config/private.yml
+releases/*.tgz
+releases/**/*.tgz
+
+# tools
+/src/github.com/BurntSushi/toml
+/src/github.com/codegangsta/cli
+/src/github.com/vito/gosub
+/src/gopkg.in/*
+
+# misc
+out/
+*/**/test_assets/stdout.log
+release/
+*/bin
+*.iml
+*.pem
+*.etcd
